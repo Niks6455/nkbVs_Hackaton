@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import HomePage from "./pages/HomePage/HomePage";
 import DataContext from "./context";
+import Auth from "./pages/AuthPage/Auth";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
+          <Route path="/Auth" element={<Auth />}></Route>
         </Routes>
       </main>
     </BrowserRouter>
