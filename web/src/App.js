@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import HomePage from "./pages/HomePage/HomePage";
 import DataContext from "./context";
-import Auth from "./pages/AuthPage/Auth";
+import Auth from "./pages/PageGroup/Page1/Auth";
 
 function App() {
 
