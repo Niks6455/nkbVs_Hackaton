@@ -1,0 +1,22 @@
+@import "./../../styles/colors.scss";
+
+.button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 50px;
+    button{
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        background-color: var(--redColor);
+        font-size: 18px;
+        font-weight: 900;
+        width: 175px;
+        transition: 0.2s linear all;
+        border: none;
+        border: 1px solid #000;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

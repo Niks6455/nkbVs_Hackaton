@@ -1,4 +1,19 @@
+@font-face {
+	font-family: 'Century_Gothic';
+    src: url('./../assets/fonts/Century_Gothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 *{
+    font-family: "Century_Gothic";
     margin: 0;
     padding: 0;
+}
+.linkInfo{
+    margin-top: 15px;
+}
+
+.linkInfo a{
+    color:rgb(190, 0, 2);
 }
