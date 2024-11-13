@@ -23,6 +23,7 @@ import Page17 from "./pages/PageGroup/Page17/Page17";
 import Page18 from "./pages/PageGroup/Page18/Page18";
 import Page19 from "./pages/PageGroup/Page19/Page19";
 import Page20 from "./pages/PageGroup/Page20/Page20";
+import PageGlobal from "./pages/HomePage/HomePage";
 function App() {
 
   const context = {
@@ -38,27 +39,29 @@ function App() {
     <BrowserRouter>
       <main className={styles.App}>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/Page1" element={<Page1 />}></Route>
-          <Route path="/Page2" element={<Page2 />}></Route>
-          <Route path="/Page3" element={<Page3 />}></Route>
-          <Route path="/Page4" element={<Page4 />}></Route>
-          <Route path="/Page5" element={<Page5 />}></Route>
-          <Route path="/Page6" element={<Page6 />}></Route>
-          <Route path="/Page7" element={<Page7 />}></Route>
-          <Route path="/Page8" element={<Page8 />}></Route>
-          <Route path="/Page9" element={<Page9 />}></Route>
-          <Route path="/Page10" element={<Page10 />}></Route>
-          <Route path="/Page11" element={<Page11 />}></Route>
-          <Route path="/Page12" element={<Page12 />}></Route>
-          <Route path="/Page13" element={<Page13 />}></Route>
-          <Route path="/Page14" element={<Page14 />}></Route>
-          <Route path="/Page15" element={<Page15 />}></Route>
-          <Route path="/Page16" element={<Page16 />}></Route>
-          <Route path="/Page17" element={<Page17 />}></Route>
-          <Route path="/Page18" element={<Page18 />}></Route>
-          <Route path="/Page19" element={<Page19 />}></Route>
-          <Route path="/Page20" element={<Page20 />}></Route>
+        <Route path="/PageGlobal/*" element={<PageGlobal />}>
+              <Route path="Page1" element={<Page1 />}></Route>
+              <Route path="Page2" element={<Page2 />}></Route>
+              <Route path="Page3" element={<Page3 />}></Route>
+              <Route path="Page4" element={<Page4 />}></Route>
+              <Route path="Page5" element={<Page5 />}></Route>
+              <Route path="Page6" element={<Page6 />}></Route>
+              <Route path="Page7" element={<Page7 />}></Route>
+              <Route path="Page8" element={<Page8 />}></Route>
+              <Route path="Page9" element={<Page9 />}></Route>
+              <Route path="Page10" element={<Page10 />}></Route>
+              <Route path="Page11" element={<Page11 />}></Route>
+              <Route path="Page12" element={<Page12 />}></Route>
+              <Route path="Page13" element={<Page13 />}></Route>
+              <Route path="Page14" element={<Page14 />}></Route>
+              <Route path="Page15" element={<Page15 />}></Route>
+              <Route path="Page16" element={<Page16 />}></Route>
+              <Route path="Page17" element={<Page17 />}></Route>
+              <Route path="Page18" element={<Page18 />}></Route>
+              <Route path="Page19" element={<Page19 />}></Route>
+              <Route path="Page20" element={<Page20 />}></Route>
+            </Route>
+         
         </Routes>
       </main>
     </BrowserRouter>

@@ -1,12 +1,17 @@
 import { useContext } from "react";
 import DataContext from "../../context";
+import Layout from "../../components/Layout/Layout";
+import { Outlet } from "react-router-dom";
 
-function HomePage() {
+function PageGlobal() {
     const context = useContext(DataContext);
     console.log("context", context)
+
     return ( 
-        <p>Page: {context.valueBasic}</p>
+        <div>    
+            <Outlet/>
+        </div>
      );
 }
 
-export default HomePage;
+export default PageGlobal;
